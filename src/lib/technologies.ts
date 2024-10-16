@@ -1,4 +1,4 @@
-import type {LucideIcon} from 'lucide-react'
+import {ArrowDownUp, LucideIcon} from 'lucide-react'
 import {Code, Coffee, Database, FileText, Github, Package, ShipWheel, Terminal, Zap} from 'lucide-react'
 
 interface Technology {
@@ -12,6 +12,7 @@ export const technologies: Technology[] = [
     {name: "GitHub", icon: Github},
     {name: "Paper", icon: FileText},
     {name: "Velocity", icon: Zap},
+    {name: "Javalin", icon: ArrowDownUp},
     {name: "Docker", icon: ShipWheel},
     {name: "Ubuntu", icon: Terminal},
     {name: "JetBrains IDEs", icon: Code},
