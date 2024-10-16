@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         locale: "en_US",
         url: "https://nonswag.dev",
         siteName: "NonSwag Portfolio",
-        title: "NonSwag | Web Developer Portfolio",
+        title: "NonSwag | Developer Portfolio",
         description: "Explore NonSwag's development projects and skills",
     },
 };
