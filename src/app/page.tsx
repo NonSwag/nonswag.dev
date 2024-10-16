@@ -15,7 +15,8 @@ export default function Component() {
                             {["About", "Tech Stack", "Projects", "Contact"].map((item) => (
                                 <li key={item}>
                                     <a href={`#${item.toLowerCase().replace(' ', '-')}`}
-                                       className="hover:text-green-400 transition-colors">
+                                       className="hover:text-green-400 transition-colors"
+                                       data-umami-event={`view-${item.toLowerCase().replace(' ', '-')}`}>
                                         {item}
                                     </a>
                                 </li>
@@ -80,7 +81,12 @@ export default function Component() {
                                     <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
                                     <p className="text-green-300 mb-4 flex-grow">{project.description}</p>
                                     <a href={project.link}
-                                       className="text-green-400 hover:underline self-start">&gt; ./view_details.sh</a>
+                                       className="text-green-400 hover:underline self-start"
+                                       data-umami-event={`view-project-${project.name.toLowerCase().replace(/\s+/g, '-')}`}
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        &gt; ./view_details.sh
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -91,6 +97,7 @@ export default function Component() {
                         <a
                             href="mailto:mail@nonswag.dev"
                             className="inline-block bg-green-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors animate-pulse"
+                            data-umami-event="contact-email"
                         >
                             <Zap className="inline-block mr-2"/>
                             Establish Secure Channel
@@ -100,7 +107,8 @@ export default function Component() {
                 <footer className="py-6 text-center">
                     <div className="flex justify-center space-x-6 mb-4">
                         <a href="https://github.com/NonSwag" target="_blank" rel="noopener noreferrer"
-                           className="text-green-500 hover:text-green-400 transition-colors">
+                           className="text-green-500 hover:text-green-400 transition-colors"
+                           data-umami-event="view-github">
                             <Github className="w-6 h-6"/>
                             <span className="sr-only">GitHub</span>
                         </a>

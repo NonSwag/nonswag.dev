@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import React from "react";
+import Script from "next/script";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -41,6 +42,8 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <header>
+            <Script defer src="https://analytics.thenextlvl.net/script.js"
+                    data-website-id="b29f8472-a35d-4743-aa19-85d7f130e315"></Script>
         </header>
         <main>{children}</main>
         </body>
