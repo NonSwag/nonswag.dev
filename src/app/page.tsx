@@ -99,7 +99,7 @@ export default function Component() {
                 </main>
                 <footer className="py-6 text-center">
                     <div className="flex justify-center space-x-6 mb-4">
-                        <a href="https://github.com/nonswag" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/NonSwag" target="_blank" rel="noopener noreferrer"
                            className="text-green-500 hover:text-green-400 transition-colors">
                             <Github className="w-6 h-6"/>
                             <span className="sr-only">GitHub</span>
