@@ -16,7 +16,7 @@ export default function NotFoundPage() {
     }, [])
 
     return (
-        <div className="min-h-screen bg-black text-green-500 font-mono flex flex-col justify-center items-center p-4">
+        <div className="min-h-screen bg-black text-primary font-mono flex flex-col justify-center items-center p-4">
             <Terminal className="w-16 h-16 mb-8"/>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 glitch" data-text="404_NOT_FOUND">404_NOT_FOUND</h1>
             <p className="text-xl md:text-2xl mb-8 text-center">
@@ -25,11 +25,11 @@ export default function NotFoundPage() {
             <div className="text-lg md:text-xl mb-8 flex items-center">
                 <span className="mr-2">&gt;</span>
                 <span>cd /home</span>
-                <span className={`w-3 h-6 bg-green-500 ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'}`}></span>
+                <span className={`w-3 h-6 bg-primary ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'}`}></span>
             </div>
             <Link
                 href="/"
-                className="bg-green-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400 transition-colors">
+                className="bg-primary text-black px-6 py-3 rounded-full font-semibold hover:bg-hover transition-colors">
                 Return to Base
             </Link>
         </div>
