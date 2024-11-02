@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci;
+RUN npm ci
 
 COPY src ./src
 COPY next.config.mjs .
