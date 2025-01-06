@@ -113,7 +113,7 @@ export default function Component() {
                             <span className="sr-only">GitHub</span>
                         </a>
                     </div>
-                    <p className="text-dark">&copy; 2024 NonSwag | All rights reserved | I &lt;3 OpenSource </p>
+                    <p className="text-dark">&copy; 2025 NonSwag | All rights reserved | I &lt;3 OpenSource </p>
                 </footer>
             </div>
         </div>
