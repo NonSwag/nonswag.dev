@@ -79,7 +79,7 @@ export default function Component() {
                                 <div key={index}
                                      className="bg-gray-900 p-6 rounded-lg border border-primary flex flex-col">
                                     <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                                    <p className="text-secondary mb-4 flex-grow">{project.description}</p>
+                                    <p className="text-secondary mb-4 grow">{project.description}</p>
                                     <a href={project.link}
                                        className="text-primary hover:underline self-start"
                                        data-umami-event={`view-project-${project.name.toLowerCase().replace(/\s+/g, '-')}`}
