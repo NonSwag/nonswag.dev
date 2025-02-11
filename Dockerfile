@@ -1,24 +1,12 @@
-FROM node:lts-alpine
+FROM oven/bun:latest AS base
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-
-RUN npm ci
-
-COPY src ./src
-COPY next.config.mjs .
-COPY tsconfig.json . 
-COPY postcss.config.mjs .
-COPY tsconfig.json .
-
-# Environment variables must be present at build time
-# https://github.com/vercel/next.js/discussions/14030
-ARG NEXT_PUBLIC_ENV_VARIABLE
-ENV NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
+COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN npm run build
+RUN bun run build
 
-CMD npm run start
+USER bun
+ENTRYPOINT ["bun", "run", "start"]
