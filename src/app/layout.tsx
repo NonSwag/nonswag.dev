@@ -42,8 +42,8 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <header>
-            <Script defer src="https://analytics.thenextlvl.net/script.js"
-                    data-website-id="b29f8472-a35d-4743-aa19-85d7f130e315"></Script>
+            <Script defer src={process.env.NEXT_PUBLIC_ANALYTICS_URL}
+                    data-website-id={process.env.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID}></Script>
         </header>
         <main>{children}</main>
         </body>
