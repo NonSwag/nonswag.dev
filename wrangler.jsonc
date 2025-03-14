@@ -6,6 +6,6 @@
   "vars": {
     "NODE_VERSION": "23",
     "NEXT_VERSION": "15",
-    "REACT_VERSION": "18"
+    "REACT_VERSION": "19"
   }
 }
