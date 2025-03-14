@@ -1,4 +1,0 @@
-services:
-  portfolio:
-    build: .
-    restart: always
