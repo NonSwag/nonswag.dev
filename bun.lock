@@ -14,7 +14,7 @@
         "react-typed": "^2.0.12",
       },
       "devDependencies": {
-        "@next/eslint-plugin-next": "^15.2.3",
+        "@next/eslint-plugin-next": "^15.2.4",
         "@types/node": "^22.13.11",
         "@types/react": "^19.0.12",
         "@types/react-dom": "^19.0.4",
@@ -186,7 +186,7 @@
 
     "@next/env": ["@next/env@15.2.3", "", {}, "sha512-a26KnbW9DFEUsSxAxKBORR/uD9THoYoKbkpFywMN/AFvboTt94b8+g/07T8J6ACsdLag8/PDU60ov4rPxRAixw=="],
 
-    "@next/eslint-plugin-next": ["@next/eslint-plugin-next@15.2.3", "", { "dependencies": { "fast-glob": "3.3.1" } }, "sha512-eNSOIMJtjs+dp4Ms1tB1PPPJUQHP3uZK+OQ7iFY9qXpGO6ojT6imCL+KcUOqE/GXGidWbBZJzYdgAdPHqeCEPA=="],
+    "@next/eslint-plugin-next": ["@next/eslint-plugin-next@15.2.4", "", { "dependencies": { "fast-glob": "3.3.1" } }, "sha512-O8ScvKtnxkp8kL9TpJTTKnMqlkZnS+QxwoQnJwPGBxjBbzd6OVVPEJ5/pMNrktSyXQD/chEfzfFzYLM6JANOOQ=="],
 
     "@next/swc-darwin-arm64": ["@next/swc-darwin-arm64@15.2.3", "", { "os": "darwin", "cpu": "arm64" }, "sha512-uaBhA8aLbXLqwjnsHSkxs353WrRgQgiFjduDpc7YXEU0B54IKx3vU+cxQlYwPCyC8uYEEX7THhtQQsfHnvv8dw=="],
 
