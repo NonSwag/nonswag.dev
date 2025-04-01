@@ -13,7 +13,7 @@
     "deploy": "bun run build:pages && wrangler pages deploy"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.10",
+    "@cloudflare/next-on-pages": "^1.13.11",
     "@tailwindcss/postcss": "^4.0.17",
     "lucide-react": "^0.486.0",
     "next": "^15.2.4",
