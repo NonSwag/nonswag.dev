@@ -6,14 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:pages": "bunx @cloudflare/next-on-pages",
-    "dev:pages": "wrangler pages dev",
-    "preview": "bun run build:pages && bun run dev:pages",
-    "deploy": "bun run build:pages && wrangler pages deploy"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.12",
     "@tailwindcss/postcss": "^4.1.5",
     "lucide-react": "^0.511.0",
     "next": "^15.3.1",
