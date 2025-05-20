@@ -47,11 +47,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header>
-          <Script
-            defer
-            src={process.env.NEXT_PUBLIC_ANALYTICS_URL}
-            data-website-id={process.env.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID}
-          ></Script>
+          {process.env.NEXT_PUBLIC_ANALYTICS_URL &&
+            process.env.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID && (
+              <Script
+                defer
+                src={process.env.NEXT_PUBLIC_ANALYTICS_URL}
+                data-website-id={process.env.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID}
+              ></Script>
+            )}
         </header>
         <main>{children}</main>
       </body>
