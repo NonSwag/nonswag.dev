@@ -75,10 +75,9 @@ export default function Component() {
                   link: "https://thenextlvl.net",
                 },
                 {
-                  name: "MythPvP",
-                  description:
-                    "MythPvP is my Minecraft server network that blends mythology and PvP into an immersive experience. With stunning maps, artwork, and engaging gameplay, we aim to deliver an exceptional user experience for all players.",
-                  link: "https://mythpvp.net",
+                  name: "fastStats (WIP)",
+                  description: "fastStats is a work in progress stats and metrics platform.",
+                  link: "https://github.com/fastStats-org",
                 },
               ].map((project, index) => (
                 <div
