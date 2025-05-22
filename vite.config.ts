@@ -4,19 +4,4 @@ import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  optimizeDeps: {
-    include: ["react", "react-dom", "react-router", "lucide-react", "tailwindcss"],
-  },
-  build: {
-    emptyOutDir: true,
-    cssCodeSplit: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ["react", "react-dom"],
-          "react-router": ["react-router"],
-        },
-      },
-    },
-  },
 })
