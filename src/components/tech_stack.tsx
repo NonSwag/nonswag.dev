@@ -1,6 +1,6 @@
 "use client"
 
-import { technologies } from "@/lib/technologies"
+import { technologies } from "../lib/technologies"
 
 export default function TechStack() {
   return (
