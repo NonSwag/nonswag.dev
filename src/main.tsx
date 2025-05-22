@@ -4,7 +4,7 @@ import "./index.css"
 import App from "./App.tsx"
 import { BrowserRouter, Route, Routes } from "react-router"
 import NotFoundPage from "./components/not-found.tsx"
-import TechStack from "./components/tech_stack.tsx"
+import TechStack from "./components/tech-stack.tsx"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
