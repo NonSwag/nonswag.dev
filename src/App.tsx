@@ -1,8 +1,8 @@
 "use client";
 
+import { Github, Zap } from "lucide-react";
 import { ReactTyped } from "react-typed";
 import { technologies } from "./lib/technologies";
-import { Github, Zap } from "lucide-react";
 
 export default function Component() {
 	return (
@@ -81,9 +81,9 @@ export default function Component() {
 										"fastStats is a work in progress stats and metrics platform.",
 									link: "https://github.com/fastStats-org",
 								},
-							].map((project, index) => (
+							].map((project) => (
 								<div
-									key={index}
+									key={project.name}
 									className="bg-gray-900 p-6 rounded-lg border border-primary flex flex-col"
 								>
 									<h3 className="text-xl font-semibold mb-2">{project.name}</h3>
