@@ -52,9 +52,9 @@ export default function Component() {
 					<section id="tech-stack" className="mb-20">
 						<h2 className="text-3xl font-bold mb-4">&gt; cat tech_stack.txt</h2>
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-							{technologies.map((tech, index) => (
+							{technologies.map((tech) => (
 								<div
-									key={index}
+									key={tech.name}
 									className="bg-gray-900 p-4 rounded-lg border border-primary flex items-center"
 								>
 									<span className="text-2xl mr-2">
