@@ -76,10 +76,10 @@ export default function Component() {
 									link: "https://thenextlvl.net",
 								},
 								{
-									name: "fastStats (WIP)",
+									name: "FastStats (WIP)",
 									description:
-										"fastStats is a work in progress stats and metrics platform.",
-									link: "https://github.com/fastStats-org",
+										"FastStats is a work in progress stats and metrics platform.",
+									link: "https://faststats.dev",
 								},
 							].map((project) => (
 								<div
