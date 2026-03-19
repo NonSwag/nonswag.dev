@@ -1,0 +1,127 @@
+---
+import {
+	ArrowDownUp,
+	Code,
+	Coffee,
+	Database,
+	Github,
+	Package,
+	Send,
+	ShipWheel,
+	Terminal,
+	Zap,
+} from "@lucide/astro";
+import { technologies } from "../data/technologies";
+import MainLayout from "../layouts/main-layout.astro";
+
+const iconMap: Record<string, typeof Coffee> = {
+	Coffee,
+	Database,
+	Github,
+	Send,
+	Zap,
+	ArrowDownUp,
+	ShipWheel,
+	Terminal,
+	Code,
+	Package,
+};
+---
+
+<MainLayout title="NonSwag | Portfolio">
+	<section id="hero" class="text-center mb-20">
+		<h1 class="text-5xl font-bold mb-4 glitch" data-text="NonSwag">
+			NonSwag
+		</h1>
+		<span id="typed" class="text-2xl text-primary"></span>
+	</section>
+	<section id="about" class="mb-20">
+		<h2 class="text-3xl font-bold mb-4">&gt; whoami</h2>
+		<p class="text-secondary leading-relaxed">
+			I am a Java developer specializing in Minecraft plugins and REST APIs, I
+			started programming at the age of 12. I believe users should have the
+			option to customize every aspect of the software they use, and I design
+			everything with that in mind. I'm passionate about contributing to
+			open-source projects, pentesting servers, and helping others fix
+			vulnerabilities.
+		</p>
+	</section>
+	<section id="tech-stack" class="mb-20">
+		<h2 class="text-3xl font-bold mb-4">&gt; cat tech_stack.txt</h2>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+			{technologies.map((tech) => {
+				const Icon = iconMap[tech.icon];
+				return (
+					<div
+						class="bg-gray-900 p-4 rounded-lg border border-primary flex items-center"
+					>
+						{Icon && <Icon size={24} class="mr-2 shrink-0" />}
+						<span>{tech.name}</span>
+					</div>
+				);
+			})}
+		</div>
+	</section>
+	<section id="projects" class="mb-20">
+		<h2 class="text-3xl font-bold mb-4">&gt; ls projects/</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			<div
+				class="bg-gray-900 p-6 rounded-lg border border-primary flex flex-col"
+			>
+				<h3 class="text-xl font-semibold mb-2">TheNextLvl Productions</h3>
+				<p class="text-secondary mb-4 grow">
+					Under the TheNextLvl label I publish Minecraft plugins and run a server
+					network. Focused on performance, quality and customization, TheNextLvl
+					pushes the boundaries of Minecraft plugin development.
+				</p>
+				<a
+					href="https://thenextlvl.net"
+					class="text-primary hover:underline self-start"
+					data-umami-event="view-project-thenextlvl-productions"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					&gt; ./view_details.sh
+				</a>
+			</div>
+			<div
+				class="bg-gray-900 p-6 rounded-lg border border-primary flex flex-col"
+			>
+				<h3 class="text-xl font-semibold mb-2">FastStats (WIP)</h3>
+				<p class="text-secondary mb-4 grow">
+					FastStats is a work in progress stats and metrics platform.
+				</p>
+				<a
+					href="https://faststats.dev"
+					class="text-primary hover:underline self-start"
+					data-umami-event="view-project-faststats-wip"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					&gt; ./view_details.sh
+				</a>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="text-center">
+		<h2 class="text-3xl font-bold mb-4">&gt; ./initiate_contact.sh</h2>
+		<p class="text-secondary mb-6">Let's connect and bring your idea to life!</p>
+		<a
+			href="mailto:mail@nonswag.dev"
+			class="inline-block bg-primary text-black px-6 py-3 rounded-full font-semibold hover:bg-hover transition-colors animate-pulse"
+			data-umami-event="contact-email"
+		>
+			<Zap size={20} class="inline-block mr-2" />
+			Establish Secure Channel
+		</a>
+	</section>
+	<script>
+		import Typed from "typed.js";
+		const typed = new Typed("#typed", {
+			strings: ["Developer", "Tech Enthusiast", "Open Source"],
+			typeSpeed: 40,
+			backSpeed: 50,
+			loop: true,
+		});
+	</script>
+</MainLayout>

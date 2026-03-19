@@ -1,0 +1,45 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const {
+	title,
+	description = "NonSwag's Portfolio showcasing development projects and skills",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<script>
+			import { WebAnalytics } from "@faststats/web";
+			new WebAnalytics({
+				siteKey: "2687f91b56740a58c8e19d642c574fc7",
+				trackErrors: true,
+				trackWebVitals: true,
+				trackReplay: true
+			});
+		</script>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta
+			name="keywords"
+			content="minecraft plugins, portfolio, nonswag, java, paper plugin, minecraft, programming"
+		/>
+		<meta name="author" content="NonSwag" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:url" content="https://nonswag.dev" />
+		<meta property="og:site_name" content="NonSwag Portfolio" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

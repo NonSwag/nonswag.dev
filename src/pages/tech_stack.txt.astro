@@ -1,0 +1,15 @@
+---
+import { technologies } from "../data/technologies";
+import MainLayout from "../layouts/main-layout.astro";
+---
+
+<MainLayout
+	title="Tech Stack | NonSwag"
+	description="NonSwag's technology stack and tools"
+>
+	<div class="flex flex-col">
+		{technologies.map((item) => (
+			<div>{item.name}</div>
+		))}
+	</div>
+</MainLayout>

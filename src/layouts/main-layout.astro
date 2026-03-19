@@ -1,0 +1,82 @@
+---
+import { Github } from "@lucide/astro";
+import BaseLayout from "./base-layout.astro";
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+	<div class="min-h-screen bg-black text-primary font-mono max-w-screen overflow-hidden">
+		<div class="relative z-10 p-4">
+			<header class="py-6">
+				<nav class="container mx-auto">
+					<ul class="flex justify-center space-x-6 text-lg">
+						<li>
+							<a
+								href="/#about"
+								class="hover:text-hover transition-colors"
+								data-umami-event="view-about"
+							>
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="/tech_stack.txt"
+								class="hover:text-hover transition-colors"
+								data-umami-event="view-tech-stack"
+							>
+								Tech Stack
+							</a>
+						</li>
+						<li>
+							<a
+								href="/#projects"
+								class="hover:text-hover transition-colors"
+								data-umami-event="view-projects"
+							>
+								Projects
+							</a>
+						</li>
+						<li>
+							<a
+								href="/#contact"
+								class="hover:text-hover transition-colors"
+								data-umami-event="view-contact"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main class="container mx-auto py-12">
+				<slot />
+			</main>
+			<footer class="py-6 text-center">
+				<div class="flex justify-center space-x-6 mb-4">
+					<a
+						href="https://github.com/NonSwag"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-primary hover:text-hover transition-colors inline-flex"
+						data-umami-event="view-github"
+					>
+						<Github size={24} />
+						<span class="sr-only">GitHub</span>
+					</a>
+				</div>
+				<p class="text-dark">
+					&copy; {new Date().getFullYear()} NonSwag | All rights reserved | I &lt;3
+					OpenSource
+				</p>
+			</footer>
+		</div>
+	</div>
+</BaseLayout>
