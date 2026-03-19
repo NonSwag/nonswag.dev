@@ -7,11 +7,11 @@ export const technologies: Technology[] = [
 	{ name: "Java", icon: "Coffee" },
 	{ name: "SQL", icon: "Database" },
 	{ name: "GitHub", icon: "Github" },
-	{ name: "Paper", icon: "Send" },
+	{ name: "Paper/Folia", icon: "Send" },
 	{ name: "Velocity", icon: "Zap" },
 	{ name: "Javalin", icon: "ArrowDownUp" },
 	{ name: "Docker", icon: "ShipWheel" },
-	{ name: "Ubuntu", icon: "Terminal" },
+	{ name: "Arch (btw)", icon: "Terminal" },
 	{ name: "JetBrains IDEs", icon: "Code" },
 	{ name: "Reposilite", icon: "Package" },
 ];
