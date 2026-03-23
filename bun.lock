@@ -6,7 +6,7 @@
       "name": "nonswag.dev",
       "dependencies": {
         "@faststats/web": "^0.1.3",
-        "@lucide/astro": "^0.577.0",
+        "@lucide/astro": "^1.0.0",
       },
       "devDependencies": {
         "@biomejs/biome": "2.4.8",
@@ -183,7 +183,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.25", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="],
 
-    "@lucide/astro": ["@lucide/astro@0.577.0", "", { "peerDependencies": { "astro": "^4 || ^5" } }, "sha512-xZcdx+MyYXY74cBzFxr9N49SlofbGjCVD9GxJZcJA40PJvJSLWSeJpD9bgKFcZfFxf1QXkEYaR6BnCS+0lek8Q=="],
+    "@lucide/astro": ["@lucide/astro@1.0.0", "", { "peerDependencies": { "astro": "^4 || ^5" } }, "sha512-Fq4aPLvUv4akEW2DPDewaEkhp2T2an+e+Qrh0qi8r7xdVLipL6BXtiYbwvJumlcsVo8zvOsydTr1GpZDhJKJVA=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.1", "", { "dependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1", "@tybys/wasm-util": "^0.10.1" } }, "sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A=="],
 
