@@ -17,7 +17,7 @@
 		"astro": "6.0.8",
 		"tailwindcss": "^4.2.2",
 		"typed.js": "^3.0.0",
-		"typescript": "~5.9.3"
+		"typescript": "~6.0.0"
 	},
 	"dependencies": {
 		"@faststats/web": "^0.1.3",
