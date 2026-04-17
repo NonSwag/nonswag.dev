@@ -5,7 +5,7 @@
     "": {
       "name": "nonswag.dev",
       "dependencies": {
-        "@faststats/web": "^0.1.3",
+        "@faststats/web": "^0.2.0",
         "@lucide/astro": "^1.0.0",
       },
       "devDependencies": {
@@ -119,7 +119,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.4", "", { "os": "win32", "cpu": "x64" }, "sha512-+knoa0BDoeXgkNvvV1vvbZX4+hizelrkwmGJBdT17t8FNPwG2lKemmuMZlmaNQ3ws3DKKCxpb4zRZEIp3UxFCg=="],
 
-    "@faststats/web": ["@faststats/web@0.1.3", "", { "dependencies": { "@rrweb/rrweb-plugin-console-record": "^2.0.0-alpha.20", "rrweb": "^2.0.0-alpha.4", "rrweb-snapshot": "^2.0.0-alpha.4", "web-vitals": "^5.1.0" } }, "sha512-W9X4pKHY9eufsdPO16QXtYqTgr6abqa9z7tlhzjHiLVs8W9RwKfiHwGgZwGhj0YJL3UcjPFcd1Q1MM4RY2fKUw=="],
+    "@faststats/web": ["@faststats/web@0.2.0", "", { "dependencies": { "@rrweb/rrweb-plugin-console-record": "^2.0.0-alpha.20", "@rrweb/rrweb-plugin-sequential-id-record": "^2.0.0-alpha.20", "rrweb": "^2.0.0-alpha.4", "rrweb-snapshot": "^2.0.0-alpha.4", "web-vitals": "^5.1.0" } }, "sha512-hvTpAeAQYfD7JtyOBGRfgTiCey9UgiclJtR92iUEQpo5aCY8Dv60Itw9pNwBH2Ahsls68MXteIqHHslJw+i3fA=="],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 
@@ -278,6 +278,8 @@
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.59.0", "", { "os": "win32", "cpu": "x64" }, "sha512-2HRCml6OztYXyJXAvdDXPKcawukWY2GpR5/nxKp4iBgiO3wcoEGkAaqctIbZcNB6KlUQBIqt8VYkNSj2397EfA=="],
 
     "@rrweb/rrweb-plugin-console-record": ["@rrweb/rrweb-plugin-console-record@2.0.0-alpha.20", "", { "peerDependencies": { "@rrweb/utils": "^2.0.0-alpha.20", "rrweb": "^2.0.0-alpha.20" } }, "sha512-4v05qwW7C4AnGxkwf7YeIkSGrNJpZ4tFj2j5Wa6suHlDsDvpqHH/ZRNTqdNRjeWcceSMuqka/zULOGX/f0KcCA=="],
+
+    "@rrweb/rrweb-plugin-sequential-id-record": ["@rrweb/rrweb-plugin-sequential-id-record@2.0.0-alpha.20", "", { "peerDependencies": { "rrweb": "^2.0.0-alpha.20" } }, "sha512-u8rJN//w5VgWgPtGEHIxhld872MysBmH1GXsiolPWAWzL13Is5jHxA8doezaJFoQ/i18B2x5ZNDVF/7pgSg4yQ=="],
 
     "@rrweb/types": ["@rrweb/types@2.0.0-alpha.20", "", {}, "sha512-RbnDgKxA/odwB1R4gF7eUUj+rdSrq6ROQJsnMw7MIsGzlbSYvJeZN8YY4XqU0G6sKJvXI6bSzk7w/G94jNwzhw=="],
 
