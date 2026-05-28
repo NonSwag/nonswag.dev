@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.4.16",
 		"@tailwindcss/vite": "^4.2.2",
-		"astro": "6.4.0",
+		"astro": "6.4.1",
 		"tailwindcss": "^4.2.2",
 		"typed.js": "^3.0.0",
 		"typescript": "~6.0.0"
