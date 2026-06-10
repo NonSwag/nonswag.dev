@@ -13,14 +13,14 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.16",
-		"@tailwindcss/vite": "^4.2.2",
+		"@tailwindcss/vite": "^4.3.0",
 		"astro": "6.4.5",
-		"tailwindcss": "^4.2.2",
+		"tailwindcss": "^4.3.0",
 		"typed.js": "^3.0.0",
 		"typescript": "~6.0.0"
 	},
 	"dependencies": {
-		"@faststats/web": "^0.2.0",
-		"@lucide/astro": "^1.0.0"
+		"@faststats/web": "^0.3.0",
+		"@lucide/astro": "^1.17.0"
 	}
 }
