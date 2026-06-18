@@ -20,7 +20,7 @@
 		"typescript": "~6.0.0"
 	},
 	"dependencies": {
-		"@faststats/web": "^0.3.0",
+		"@faststats/web": "^0.4.0",
 		"@lucide/astro": "^1.17.0"
 	}
 }
