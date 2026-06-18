@@ -20,9 +20,9 @@ const {
 			import { WebAnalytics } from "@faststats/web";
 			new WebAnalytics({
 				siteKey: "2687f91b56740a58c8e19d642c574fc7",
-				trackErrors: true,
-				trackWebVitals: true,
-				trackReplay: true
+				webVitals: {enabled: true},
+				sessionReplays: {enabled: true},
+				errorTracking: {enabled: true},
 			});
 		</script>
 		<title>{title}</title>
