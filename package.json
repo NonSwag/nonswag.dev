@@ -22,5 +22,8 @@
 	"dependencies": {
 		"@faststats/web": "^0.4.0",
 		"@lucide/astro": "^1.17.0"
+	},
+	"overrides": {
+		"vite": "^7"
 	}
 }
