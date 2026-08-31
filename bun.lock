@@ -5,7 +5,7 @@
     "": {
       "name": "nonswag.dev",
       "dependencies": {
-        "@faststats/web": "^0.7.0",
+        "@faststats/web": "^0.8.0",
         "@lucide/astro": "^1.17.0",
       },
       "devDependencies": {
@@ -118,7 +118,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.4", "", { "os": "win32", "cpu": "x64" }, "sha512-+knoa0BDoeXgkNvvV1vvbZX4+hizelrkwmGJBdT17t8FNPwG2lKemmuMZlmaNQ3ws3DKKCxpb4zRZEIp3UxFCg=="],
 
-    "@faststats/web": ["@faststats/web@0.7.0", "", { "dependencies": { "@rrweb/record": "^2.1.0", "@rrweb/rrweb-plugin-console-record": "^2.1.0", "@rrweb/rrweb-plugin-sequential-id-record": "^2.1.0", "web-vitals": "^6.0.0" } }, "sha512-jodlXNnHKH+y/60gMfzqNST7NKDICxdAYmNSBIQYyOu4uJFSA0DAnHrls8FzgOMxigkHFhIKVjnFTq4H1O6ffw=="],
+    "@faststats/web": ["@faststats/web@0.8.1", "", { "dependencies": { "@rrweb/record": "^2.1.1", "@rrweb/rrweb-plugin-console-record": "^2.1.1", "web-vitals": "^6.2.1" } }, "sha512-38WlfFOHwYxt0nWy0PUm2zRc+Aqy4ZNgJ/+3FhyBN2rpUWNvRlLVxpTspPWABaWWG91FuP3HgqwayBAcEt7RnA=="],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 
@@ -241,8 +241,6 @@
     "@rrweb/record": ["@rrweb/record@2.1.1", "", { "dependencies": { "@rrweb/types": "^2.1.1", "@rrweb/utils": "^2.1.1", "rrweb": "^2.1.1" } }, "sha512-c2u175R+daC37PhbjaQV0migxtIXsLuD0mRgRstj/x/CRmLGctRlDi373/4miIUclleq4eZIQXAglH9opclFRQ=="],
 
     "@rrweb/rrweb-plugin-console-record": ["@rrweb/rrweb-plugin-console-record@2.1.1", "", { "peerDependencies": { "@rrweb/utils": "^2.1.1", "rrweb": "^2.1.1" } }, "sha512-wf5gK5/dHwguvJ/dRyENXqWrctVBMHMoegvLgJBmp+3ZvZ8HtDTgU+9zl4Qu8w8NCXQgXTxae1ksWch0UHFiUQ=="],
-
-    "@rrweb/rrweb-plugin-sequential-id-record": ["@rrweb/rrweb-plugin-sequential-id-record@2.1.1", "", { "peerDependencies": { "rrweb": "^2.1.1" } }, "sha512-9/bMUHCSLTP8Z1pOMhzv/Dmy3/JD91+GhycLUScNxmUu2yI+Dx/MwujUpz+vOfRMwT2VH16Jk4G7PYD+GK5QrQ=="],
 
     "@rrweb/types": ["@rrweb/types@2.1.1", "", {}, "sha512-g0I3nCNL1S7slDXwhunxOuOoswkY8WVZJQrPFiwixOc6xoD514d1JLTuyAzCKIox8g/PaLKtV5g31Uk42inQSQ=="],
 
@@ -772,7 +770,7 @@
 
     "web-namespaces": ["web-namespaces@2.0.1", "", {}, "sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ=="],
 
-    "web-vitals": ["web-vitals@6.0.1", "", {}, "sha512-iF3+kno3Anlqi5fPVTQk9gYLfsCiL8P69Hof+AmZyVVx00E3e/BiGVvu+EsOy6jvTLqTKuiaRloPyw0JtdKbSw=="],
+    "web-vitals": ["web-vitals@6.2.1", "", {}, "sha512-rLcLXA2sx6+9dE88NHFubwTtGxpK4yYBLj6qHPdFoCaLr0cXGb4efOqtKLlm4loGA4OEKHIQKMKzZkKyOh5ctw=="],
 
     "which-pm-runs": ["which-pm-runs@1.1.0", "", {}, "sha512-n1brCuqClxfFfq/Rb0ICg9giSZqCS+pLtccdag6C2HyufBrh3fBOiy9nb6ggRMvWOVH5GrdJskj5iGTZNxd7SA=="],
 
