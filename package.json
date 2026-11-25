@@ -12,18 +12,15 @@
 		"format": "biome format --write"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.15",
-		"@tailwindcss/vite": "^4.3.0",
-		"astro": "6.4.8",
-		"tailwindcss": "^4.3.0",
+		"@biomejs/biome": "2.6.9",
+		"@tailwindcss/vite": "^4.3.5",
+		"astro": "7.4.13",
+		"tailwindcss": "^4.3.5",
 		"typed.js": "^3.0.0",
-		"typescript": "~6.0.0"
+		"typescript": "~7.0.2"
 	},
 	"dependencies": {
-		"@faststats/web": "^0.15.0",
-		"@lucide/astro": "^1.17.0"
-	},
-	"overrides": {
-		"vite": "^7"
+		"@faststats/web": "^0.16.0",
+		"@lucide/astro": "^1.80.0"
 	}
 }

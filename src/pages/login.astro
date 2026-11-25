@@ -1,0 +1,89 @@
+---
+import { Lock } from "@lucide/astro";
+import BaseLayout from "../layouts/base-layout.astro";
+import "../styles/global.css";
+
+// Intentionally unusable page for testing LogRocket frustration signals
+// (dead clicks, rage clicks, error-free dead ends). It throws no errors,
+// authenticates nobody, and sends no form data anywhere.
+---
+
+<BaseLayout title="Login | NonSwag" description="Login test page">
+	<div class="min-h-screen bg-black text-primary font-mono flex flex-col justify-center items-center p-4">
+		<Lock size={48} class="mb-6" />
+		<h1 class="text-3xl md:text-4xl font-bold mb-8">&gt; ./login.sh</h1>
+		<form id="login-form" class="w-full max-w-sm flex flex-col gap-4" novalidate>
+			<label class="flex flex-col gap-1">
+				<!-- Near-invisible label -->
+				<span class="text-neutral-900 text-xs">username</span>
+				<!-- Accepts only 3 characters, with no hint why -->
+				<input
+					name="username"
+					type="text"
+					maxlength="3"
+					autocomplete="off"
+					class="bg-black border border-neutral-900 rounded px-3 py-2 focus:outline-none"
+				/>
+			</label>
+			<label class="flex flex-col gap-1">
+				<span class="text-neutral-900 text-xs">password</span>
+				<!-- Clears itself whenever it loses focus -->
+				<input
+					id="password"
+					name="password"
+					type="password"
+					autocomplete="off"
+					class="bg-black border border-neutral-900 rounded px-3 py-2 focus:outline-none"
+				/>
+			</label>
+			<!-- Looks disabled, is a dead click target, and dodges the cursor -->
+			<button
+				id="login-submit"
+				type="button"
+				class="relative self-center bg-neutral-800 text-neutral-600 px-3 py-1 text-xs rounded cursor-not-allowed transition-transform duration-150"
+				data-logrocket-event="login-submit"
+			>
+				Authenticate
+			</button>
+			<!-- Goes nowhere -->
+			<a href="#" class="text-neutral-800 text-xs text-center">forgot password?</a>
+			<!-- Spinner that never resolves -->
+			<p id="login-status" class="text-secondary text-center min-h-6"></p>
+		</form>
+	</div>
+	<script>
+		const password = document.getElementById("password") as HTMLInputElement | null;
+		const submit = document.getElementById("login-submit");
+		const status = document.getElementById("login-status");
+
+		password?.addEventListener("blur", () => {
+			password.value = "";
+		});
+
+		// Pressing Enter does nothing.
+		document.getElementById("login-form")?.addEventListener("submit", (event) => {
+			event.preventDefault();
+		});
+
+		let dodges = 0;
+		submit?.addEventListener("mouseenter", () => {
+			// Dodge the first few hovers, then let it be clicked.
+			if (dodges >= 3) return;
+			dodges++;
+			const x = (Math.random() - 0.5) * 200;
+			const y = (Math.random() - 0.5) * 80;
+			submit.style.transform = `translate(${x}px, ${y}px)`;
+		});
+
+		submit?.addEventListener("click", () => {
+			// Shows a spinner that never finishes; nothing else happens.
+			if (!status || status.dataset.spinning) return;
+			status.dataset.spinning = "true";
+			const frames = ["|", "/", "-", "\\"];
+			let i = 0;
+			setInterval(() => {
+				status.textContent = `authenticating ${frames[i++ % frames.length]}`;
+			}, 150);
+		});
+	</script>
+</BaseLayout>
